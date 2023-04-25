@@ -1,0 +1,4 @@
+# Paper Reading
+- [TranslatAR: A Mobile Augmented Reality Translator](http://vfragoso.com/pdfs/131.pdf)
+- Foreground and background color estimation
+    - ***We assume that the letters have a single, constant color with reasonable color contrast to the background, i.e., that there are two dominant clusters in color space that represent foreground and background. They are extracted from the subsampled rectified image using K-Means with*** $k = 2$***.*** To differentiate between foreground and background, we retrieve a few labeled samples along the left and right borders and assume that ***the background color is the one with the majority of the collected labels (this is justified as our detection algorithm automatically includes a small margin).*** This approach estimates both colors very accurately and fast when the assumptions are met. ***It will fail for very nonuniform background when there are significant specularities on the letters.***
